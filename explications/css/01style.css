@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*reset éric meyer*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+
+/*fin du reset éric meyer*/
+
+.rose {
+	background: pink;
+}
+
+.bleu {
+	background: lightblue;
+}
+
+.vert {
+	background: #1EAE93;
+}
+
+.orange {
+	background: #E7BE22;
+}
+
+.violet {
+	background: #CFA1F2
+}
+
+.rouge {
+	background: #F31C20;
+}
+
+
+body {
+/*	1 mettre une typo vite fait*/
+	font-family: Arial, sans-serif;
+/*	3 pour laisser la place au menu haut fixé*/
+	padding-top: 90px;
+	margin: 0 auto;
+}
+
+/*pour le menu du haut fixé*/
+header {
+/*	2 hauteur du header*/
+	height: 80px;
+/*	la nav est fixée*/
+	position: fixed;
+/*	elle est en haut de la page*/
+	top: 0;
+/*	pour toute la largeur de la page*/
+/*	width: 100%;*/
+/*	ou bien alors avec cette technique*/
+	left: 0;
+	right: 0;
+}
+
+.logo {
+	float: left;
+	font-variant: small-caps;
+	margin: 15px;
+}
+header nav.menu {
+	float: right;
+	font-variant: small-caps;
+	margin: 15px;
+}
+header nav.menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav.menu ul li  {
+	display: inline-block;
+}
+
+#wrapper h1 {
+	text-align: center;
+}
+
+/* pour le pied de page et la zone wrapper (wrapper contient tout sauf header et footer )*/
+#wrapper {
+	width: 70%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+	margin-bottom: 20px;
+}
+footer {
+	margin-top: 10px;
+	height: 80px;
+/*	la position relative */
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+}
+
+/*
+ou alors ???
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+*/
+
+footer p {
+	margin: 0;
+	text-align: center;
+}
+/*pour le contenu principal */
+.bloc_blanc {
+	background: white;
+	margin-bottom: 20px;
+	padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*pour la zone avec l'iframe et l'adresse*/
+
+.carte {
+	float: left;
+	width: 56%;
+	padding: 2%;
+}
+
+
+.adresse {
+	float: left;
+	width: 36%;
+	padding: 2%;
+}
+
+.clear {
+	clear: both;
+}
